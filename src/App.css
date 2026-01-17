@@ -34,6 +34,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .game-layout {
@@ -113,14 +114,38 @@ code, pre, .code-input, .test-code {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  .app {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
   .game-layout {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto auto auto;
     padding: 60px 8px 8px 8px;
     gap: 8px;
+    height: auto;
+    min-height: calc(100vh - 60px);
+    overflow: visible;
   }
   
   .world-panel {
     grid-column: auto;
+    min-height: 350px;
+  }
+
+  .panel {
+    min-height: 300px;
+    overflow: visible;
+  }
+
+  .editor-panel,
+  .test-panel {
+    min-height: 400px;
   }
 }

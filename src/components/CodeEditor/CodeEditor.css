@@ -155,3 +155,19 @@
   align-items: center;
   gap: 8px;
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .code-editor {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .editor-body {
+    min-height: 300px;
+  }
+
+  .code-input {
+    min-height: 280px;
+  }
+}

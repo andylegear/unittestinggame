@@ -279,3 +279,22 @@
   color: #f87171;
   border: 1px solid rgba(248, 113, 113, 0.3);
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .test-suite {
+    height: auto;
+    min-height: 400px;
+    overflow-y: visible;
+    padding-bottom: 24px;
+  }
+
+  .test-list {
+    overflow-y: visible;
+  }
+
+  .edge-case-section,
+  .chaos-bot-section {
+    margin-bottom: 16px;
+  }
+}

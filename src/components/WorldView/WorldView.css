@@ -126,3 +126,15 @@
   border-color: #6366f1;
   box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .world-view {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .spaceship-container {
+    min-height: 180px;
+  }
+}

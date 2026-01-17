@@ -45,6 +45,9 @@ export function GameUI() {
       {showInstructions && (
         <div className="modal-overlay">
           <div className="instructions-modal">
+            <button className="modal-close-btn" onClick={dismissInstructions} aria-label="Close">
+              ✕
+            </button>
             <div className="modal-icon">🚀</div>
             <h2>Welcome, Code Medic!</h2>
             <p className="intro-text">
