@@ -1,0 +1,281 @@
+.test-suite {
+  background: #1e1e2e;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #2a2a4a;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.suite-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.suite-header h3 {
+  margin: 0;
+  color: #cdd6f4;
+  font-size: 1rem;
+}
+
+.test-count {
+  font-size: 0.85rem;
+  color: #6c7086;
+}
+
+.test-count .all-pass {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+/* Coverage Section */
+.coverage-section {
+  background: rgba(30, 30, 50, 0.6);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #3a3a5a;
+}
+
+.coverage-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #a6adc8;
+}
+
+.coverage-bar {
+  height: 8px;
+  background: #313244;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.coverage-fill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.coverage-label {
+  font-size: 0.75rem;
+  color: #6c7086;
+  margin-top: 6px;
+  text-align: right;
+}
+
+/* Test List */
+.test-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.test-item {
+  background: #181825;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #313244;
+  transition: all 0.2s ease;
+}
+
+.test-item.passed {
+  border-color: rgba(74, 222, 128, 0.3);
+}
+
+.test-item.failed {
+  border-color: rgba(248, 113, 113, 0.3);
+}
+
+.test-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.test-light {
+  font-size: 0.85rem;
+}
+
+.test-name {
+  font-size: 0.85rem;
+  color: #cdd6f4;
+  font-weight: 500;
+}
+
+.edge-badge {
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+
+.test-code {
+  font-size: 0.8rem;
+  color: #a6adc8;
+}
+
+.test-code code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.test-diff {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.diff-line {
+  padding: 4px 0;
+}
+
+.diff-line.expected {
+  color: #4ade80;
+}
+
+.diff-line.received {
+  color: #f87171;
+}
+
+.diff-line.error {
+  color: #fbbf24;
+}
+
+/* Edge Case Section */
+.edge-case-section {
+  background: rgba(99, 102, 241, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.edge-header {
+  color: #a5b4fc;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.edge-description {
+  color: #cdd6f4;
+  font-size: 0.85rem;
+  margin: 0 0 6px 0;
+}
+
+.edge-hint {
+  color: #6c7086;
+  font-size: 0.8rem;
+  margin: 0 0 12px 0;
+}
+
+.add-test-btn {
+  width: 100%;
+  padding: 10px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.add-test-btn:hover {
+  background: #4f46e5;
+}
+
+.add-test-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-test-form input {
+  padding: 10px;
+  background: #181825;
+  border: 1px solid #313244;
+  border-radius: 6px;
+  color: #cdd6f4;
+  font-size: 0.85rem;
+}
+
+.add-test-form input::placeholder {
+  color: #6c7086;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.form-actions button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form-actions button:first-child {
+  background: #4ade80;
+  color: #0f172a;
+}
+
+.form-actions button:last-child {
+  background: #313244;
+  color: #a6adc8;
+}
+
+/* Chaos Bot */
+.chaos-bot-section {
+  border-top: 1px solid #2a2a4a;
+  padding-top: 12px;
+}
+
+.chaos-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #f87171, #fbbf24);
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.chaos-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(248, 113, 113, 0.4);
+}
+
+.chaos-result {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.chaos-result.survived {
+  background: rgba(74, 222, 128, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.chaos-result.crashed {
+  background: rgba(248, 113, 113, 0.1);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}

@@ -1,0 +1,157 @@
+.code-editor {
+  background: #1e1e2e;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #2a2a4a;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: #181825;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.file-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cdd6f4;
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.file-icon {
+  font-size: 1rem;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.run-btn {
+  background: #4ade80;
+  color: #0f172a;
+}
+
+.run-btn:hover {
+  background: #22c55e;
+  transform: translateY(-1px);
+}
+
+.observe-btn {
+  background: #6366f1;
+  color: white;
+}
+
+.observe-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.editor-body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.line-numbers {
+  padding: 16px 8px;
+  background: #181825;
+  color: #6c7086;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-align: right;
+  user-select: none;
+  border-right: 1px solid #2a2a4a;
+  min-width: 40px;
+}
+
+.line-number {
+  height: 1.6em;
+}
+
+.code-input {
+  flex: 1;
+  padding: 16px;
+  background: transparent;
+  color: #cdd6f4;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  border: none;
+  outline: none;
+  resize: none;
+  tab-size: 2;
+}
+
+.code-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.editor-overlay {
+  position: absolute;
+  inset: 0;
+  top: 50px;
+  background: rgba(15, 15, 25, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+.overlay-message {
+  text-align: center;
+  color: #a5b4fc;
+}
+
+.overlay-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.overlay-message p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.overlay-hint {
+  color: #6c7086;
+  font-size: 0.85rem !important;
+}
+
+.refactor-hint {
+  padding: 10px 16px;
+  background: rgba(99, 102, 241, 0.1);
+  border-top: 1px solid #6366f1;
+  color: #a5b4fc;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
