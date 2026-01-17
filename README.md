@@ -2,6 +2,8 @@
 
 An educational browser-based puzzle game that teaches unit testing fundamentals through the **Red-Green-Refactor** cycle. Students act as "Code Medics" repairing a broken spaceship!
 
+![Game Interface](images/game-interface.png)
+
 ## 🎮 Game Overview
 
 ### The Interface
@@ -11,6 +13,8 @@ The screen is split into three main panels:
 - **World View**: A visual of the spaceship component you're repairing
 - **Code Editor**: A simplified IDE showing buggy code to fix
 - **Test Suite**: Test cases with Pass/Fail status lights
+
+![Gameplay Screenshot](images/gameplay-screenshot.png)
 
 ### Gameplay Loop (The Levels)
 
